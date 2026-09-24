@@ -28,7 +28,7 @@ app.get('/usuarios', async (req, res) => {
     }
 })
 
-app.get('/usuario/:id', async (req, res) => {
+app.get('/usuarios/:id', async (req, res) => {
     try {
         let id = req.params.id;
         let result = await Usuarios.consultarPorId(id)
@@ -79,7 +79,7 @@ app.get('/tarefas', async (req, res) => {
     }
 })
 
-app.get('/tarefas:id', async (req, res) => {
+app.get('/tarefas/:id', async (req, res) => {
     try {
         let id = req.params.id
         let result = await Tarefas.consultarPorId(id)
@@ -125,7 +125,7 @@ app.put('/tarefas/:id', async (req, res) => {
     }
 })
 
-app.delete('/tarefas/:id', async (res, req) => {
+app.delete('/tarefas/:id', async (req, res) => {
     try {
         const id = req.params.id
         const linhasAfetadas = await Tarefas.remover(id)    

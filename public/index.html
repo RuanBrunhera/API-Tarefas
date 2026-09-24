@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>📋 Minhas tarefas</h1>
+
+        <div class="usuarios">
+            <button class="btn-usuario ativo" data-id="1">Ruan</button>
+            <button class="btn-usuario" data-id="2">Maria</button>
+        </div>
+
+        <form id="form-nova-tarefa">
+            <input type="text" id="titulo" placeholder="Título da tarefa" required>
+            <input type="text" id="descricao" placeholder="Descricao (opcional)">
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <p id="mensagem"></p>
+
+        <ul id="lista-tarefas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
