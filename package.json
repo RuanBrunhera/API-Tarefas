@@ -7,7 +7,8 @@
   "scripts": {
     "start": "nodemon .",
     "seed": "node seed.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,9 @@
     "express": "^4.19.2",
     "mysql2": "^3.9.4",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1",
+    "vitest": "^5.0.3"
   }
 }
